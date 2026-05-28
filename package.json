@@ -1,0 +1,35 @@
+{
+  "name": "@nventr.ai/react-nventr-agent",
+  "version": "1.4.1",
+  "description": "React hook and component for nventr agent",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "dev": "babel src --out-dir dist --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hgmventures/react-nventr-agent.git"
+  },
+  "author": "Steve Swallow",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hgmventures/react-nventr-agent/issues"
+  },
+  "homepage": "https://github.com/hgmventures/react-nventr-agent#readme",
+  "peerDependencies": {
+    "react": ">=15.0.1",
+    "react-dom": ">=15.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.6",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.29.0",
+    "@nventr.ai/nventr-agent": "^1.4.0"
+  }
+}
