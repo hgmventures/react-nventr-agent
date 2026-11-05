@@ -1,6 +1,6 @@
 {
   "name": "@nventr.ai/react-nventr-agent",
-  "version": "1.4.1",
+  "version": "1.6.0",
   "description": "React hook and component for nventr agent",
   "main": "dist/index.js",
   "scripts": {
@@ -30,6 +30,6 @@
   },
   "dependencies": {
     "@babel/core": "^7.29.0",
-    "@nventr.ai/nventr-agent": "^1.4.0"
+    "@nventr.ai/nventr-agent": "^1.6.0"
   }
 }

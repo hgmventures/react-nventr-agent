@@ -29,6 +29,10 @@ export function useNventrAgent(defaultOptions = {}) {
       nventrAgent.setMcpAccessToken(serverName, token),
     removeMcpAccessToken: (serverName) =>
       nventrAgent.removeMcpAccessToken(serverName),
+    setMcpCode: (serverName, code) => nventrAgent.setMcpCode(serverName, code),
+    removeMcpCode: (serverName) => nventrAgent.removeMcpCode(serverName),
+    // callback(serverName, reason): the agent needs a fresh code.
+    onMcpCodeRequired: (callback) => nventrAgent.onMcpCodeRequired(callback),
     setMetadata: (metadata) => nventrAgent.setMetadata(metadata),
     removeMetadata: () => nventrAgent.setMetadata(null),
     setContext: (context) => nventrAgent.setContext(context),
@@ -43,6 +47,12 @@ export function useNventrAgent(defaultOptions = {}) {
     restore: () => nventrAgent.restore(),
     collapse: () => nventrAgent.collapse(),
     fullscreen: () => nventrAgent.fullscreen(),
+    sidebar: () => nventrAgent.sidebar(),
+    getWindowState: () => nventrAgent.getWindowState(),
+    // Calls back with the current state, then on every change. Returns { remove }.
+    onWindowStateChange: (callback) => nventrAgent.onWindowStateChange(callback),
+    show: () => nventrAgent.show(),
+    hide: () => nventrAgent.hide(),
     remove: () => nventrAgent.remove(),
   };
 }
